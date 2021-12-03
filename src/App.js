@@ -1,6 +1,11 @@
 import "./App.scss";
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Home from "./components/Home/Home";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
 import Footer from "./components/Footer/Footer";
@@ -14,7 +19,8 @@ function App() {
         <div className="container">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/movie/:imdbID" component={MovieDetail} />
+            <Route path="/movie/:imdbID" component={MovieDetail} />
+            <Redirect to="/" />
           </Switch>
         </div>
         <Footer />
