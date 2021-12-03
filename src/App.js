@@ -13,16 +13,8 @@ function App() {
         <Header />
         <div className="container">
           <Switch>
-            <Route
-              exact
-              path="http://PraveshMalvi.github.io/movieapp"
-              component={Home}
-            />
-            <Route
-              exact
-              path="http://PraveshMalvi.github.io/movieapp/:imdbID"
-              component={MovieDetail}
-            />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/movie/:imdbID" component={MovieDetail} />
           </Switch>
         </div>
         <Footer />
