@@ -1,0 +1,51 @@
+@import "../../common/colors.scss";
+
+.movie-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  padding: 40px 0px;
+  color: #fff;
+  font-weight: 400;
+}
+.movie-rating {
+  padding-left: 3px;
+  margin-top: 20px;
+  color: $primary-color;
+  display: flex;
+  span {
+    margin-right: 20px;
+  }
+}
+.movie-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #fff;
+}
+.movie-plot {
+  margin-top: 20px;
+  line-height: 1.8rem;
+  font-weight: 300;
+}
+.movie-info > div span:first-child {
+  padding: 10px 0px;
+  color: #fff;
+  font-weight: 600;
+  width: 100px;
+  display: inline-block;
+}
+.movie-info > div span {
+  color: $primary-color;
+}
+.fa {
+  color: $primary-color;
+}
+.section-right {
+  margin: auto;
+}
+
+@media (max-width: 900px) {
+  .movie-section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
