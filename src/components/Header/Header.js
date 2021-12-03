@@ -21,7 +21,7 @@ const Header = () => {
     <>
       <div className="header">
         <div className="logo">
-          <Link to="http://PraveshMalvi.github.io/movieapp">Movie Ap</Link>
+          <Link to="http://PraveshMalvi.github.io/movieapp">Movie App</Link>
         </div>
         <div className="search-bar">
           <form onSubmit={submitHandler}>

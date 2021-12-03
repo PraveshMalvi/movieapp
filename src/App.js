@@ -3,7 +3,6 @@ import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./components/Home/Home";
 import MovieDetail from "./components/MovieDetail/MovieDetail";
-import PageNotFound from "./components/PageNotFound/PageNotFound";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
@@ -24,7 +23,6 @@ function App() {
               path="http://PraveshMalvi.github.io/movieapp/:imdbID"
               component={MovieDetail}
             />
-            <Route component={PageNotFound}></Route>
           </Switch>
         </div>
         <Footer />
