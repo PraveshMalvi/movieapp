@@ -1,5 +1,4 @@
 import React from "react";
-// import PNF from "../../images/pnf.jpg";
 import "./PageNotFound.scss";
 import { Link } from "react-router-dom";
 
@@ -14,10 +13,9 @@ const PageNotFound = () => {
         We're sorry, the page you requested could not be found. Please go back
         to home page by clickng the button below. Thank you.
       </p>
-      <Link to="/" className="backBtn">
+      <Link to="praveshmalvi.github.io/movieapp" className="backBtn">
         Back To Home
       </Link>
-      {/* <img src={PNF} alt="" /> */}
     </div>
   );
 };
