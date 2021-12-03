@@ -11,9 +11,9 @@ const PageNotFound = () => {
       <h4>Page not found.</h4>
       <p>
         We're sorry, the page you requested could not be found. Please go back
-        to home page by clickng the button below. Thank you.
+        to home page by clicking the button below. Thank you.
       </p>
-      <Link to="praveshmalvi.github.io/movieapp" className="backBtn">
+      <Link to="http://PraveshMalvi.github.io/movieapp" className="backBtn">
         Back To Home
       </Link>
     </div>

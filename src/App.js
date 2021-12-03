@@ -16,12 +16,12 @@ function App() {
           <Switch>
             <Route
               exact
-              path="praveshmalvi.github.io/movieapp"
+              path="http://PraveshMalvi.github.io/movieapp"
               component={Home}
             />
             <Route
               exact
-              path="praveshmalvi.github.io/movieapp/:imdbID"
+              path="http://PraveshMalvi.github.io/movieapp/:imdbID"
               component={MovieDetail}
             />
             <Route component={PageNotFound}></Route>
