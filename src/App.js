@@ -18,9 +18,9 @@ function App() {
         <Header />
         <div className="container">
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/movie/:imdbID" component={MovieDetail} />
-            <Redirect to="/" />
+            <Route exact path="/movieapp" component={Home} />
+            <Route path="/movieapp/movie/:imdbID" component={MovieDetail} />
+            <Redirect to="/movieapp" />
           </Switch>
         </div>
         <Footer />
