@@ -19,7 +19,11 @@ function App() {
         <div className="container">
           <Switch>
             <Route exact path="/movieapp" component={Home} />
-            <Route path="/movieapp/movie/:imdbID" component={MovieDetail} />
+            <Route
+              exact
+              path="/movieapp/movie/:imdbID"
+              component={MovieDetail}
+            />
             <Redirect to="/movieapp" />
           </Switch>
         </div>
